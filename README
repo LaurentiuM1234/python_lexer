@@ -28,4 +28,8 @@ detected (if any).
 programming language that was given to us by the TA team. The regexes found
 in the "imp.spec" file were used in order to tokenize, parse and then
 interpret that programming language.
+
+(*) the result of the parsing phase contained in the application will be
+the AST which will be then parsed in order to obtain a dictionary
+containing the variables from the program and their values.
 ===========================================================================
