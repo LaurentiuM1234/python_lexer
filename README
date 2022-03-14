@@ -1,0 +1,26 @@
+============================ DISCLAMER ====================================
+(*) this project was given to me as an assignment from the following
+course: "Limbaje formale si automate". As such, the implementations
+for some of the features were already given to me by the team of TAs. I
+am in no way trying to take credit for the work that is not mine.
+===========================================================================
+
+============================ DESCRIPTION ==================================
+(*) this project was done with the following goals in mind:
+	- better understand the algorithms used in the following
+	transformations: regex->NFA and NFA->DFA
+	- gain a better view of how a compiler works and the steps that
+	a lexer has to follow in order to tokenize a file
+	- familiarize myself with the way automatas work and how they can
+	be used in a lexer
+
+(*) the regex->NFA transformation is done using Thompson's Algorithm and
+the NFA->DFA transformation is done using Subset Contruction.
+
+(*) the application takes as input a specification file containing a list
+of tuples: <TOKEN, REGEX>. Each of these regexes contained in the tuples
+is then converted into an NFA and then into a DFA. The tokenization of the
+input file is done by feeding the input file to the resulting DFAs and 
+using Longest Prefix Match in order to determine which token has been
+detected (if any). 
+===========================================================================
