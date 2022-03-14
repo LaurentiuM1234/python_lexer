@@ -21,7 +21,7 @@ the NFA->DFA transformation is done using Subset Contruction.
 of tuples: <TOKEN, REGEX>. Each of these regexes contained in the tuples
 is then converted into an NFA and then into a DFA. The tokenization of the
 input file is done by feeding the input file to the resulting DFAs and 
-using Longest Prefix Match in order to determine which token has been
+using Longest Match in order to determine which token has been
 detected (if any).
 
 (*) the project also contains a very simple parser and interpretor for a
